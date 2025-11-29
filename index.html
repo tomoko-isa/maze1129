@@ -1,0 +1,20 @@
+<!DOCTYPE html><html><head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>迷路ゲーム</title>
+    <!-- PyScript本体の読み込み --- (*1) -->
+    <script type="module"
+     src="https://pyscript.net/releases/2025.8.1/core.js"></script>
+    <!-- Pythonのプログラムを読み込み --- (*2) -->
+    <script type="mpy" src="maze_data.py"></script>
+    <script type="mpy" src="main.py"></script>
+    <script type="mpy" src="control.py"></script>
+</head>
+<!-- ゲーム画面をHTMLで用意 --- (*3) -->
+<body style="text-align: center; padding:0; margin:0;">
+    <h3 id="info">迷路ゲーム</h3>
+    <canvas id="canvas" width="600" height="600"
+        mpy-click="canvas_on_click"></canvas>
+</body>
+</html>
